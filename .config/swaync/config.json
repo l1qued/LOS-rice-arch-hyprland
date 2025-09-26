@@ -1,0 +1,51 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "positionX": "center",
+  "positionY": "top",
+  "layer": "top",
+  "control-center-layer": "top",
+  "control-center-margin-top": 2,
+  "control-center-width": 400,
+  "control-center-height": 300,
+  "notification-body-height": 200,
+  "notification-window-width": 300,
+  "keyboard-shortcuts": true,
+  "image-visibility": "always",
+  "transition-time": 3,
+  "hide-on-clear": true,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+  "control-center-margin-bottom": 400,
+  "widgets": [
+    "title",
+    "dnd",
+    "mpris",
+    "buttons-grid"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Уведомления",
+      "clear-all-button": true,
+      "button-text": "Очистить всё"
+    },
+    "dnd": {
+      "text": "Не беспокоить"
+    },
+    "mpris": {
+      "image-size": 40,
+      "image-radius": 8
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "Wi-Fi",
+          "command": "nm-connection-editor"
+        },
+        {
+          "label": "Bluetooth",
+          "command": "blueman-manager"
+        }
+      ]
+    }
+  }
+}
