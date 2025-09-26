@@ -1,0 +1,137 @@
+@import "mocha.css";
+
+.control-center {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.notification {
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+}
+
+.widget {
+  background: transparent;
+  margin: 5px 0;
+}
+
+.widget > box {
+  margin: 0;
+  padding: 0;
+}
+
+.widget > box > box {
+  padding: 0;
+}
+
+/* Заголовок */
+.widget-title {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-bottom: 3px;
+  min-height: 0 !important;
+}
+
+/* Виджет кнопок (Wi-Fi, Bluetooth) */
+.widget-buttons-grid {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.widget-buttons-grid button {
+  background: rgba(40, 40, 40, 0.8);
+  color: #cccccc;
+  border: none;
+  border-radius: 6px;
+  margin: 3px;
+  padding: 8px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.widget-buttons-grid button:hover {
+  background: rgba(60, 60, 60, 0.8);
+  color: #ffffff;
+}
+
+/* Виджет "Не беспокоить" */
+.widget-dnd {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin: 2px 0;
+}
+
+.widget-dnd switch:checked {
+  background: rgba(100, 0, 0, 0.8);
+}
+
+/* Виджет музыки */
+.widget-mpris {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0px !important;
+  margin: 4px 0;
+}
+
+/* Область с обложкой и текстом */
+.widget-mpris > box {
+  padding: 0;
+  margin: 0;
+}
+
+/* Обложка альбома */
+.widget-mpris image {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 6px;
+}
+
+/* Текстовая информация */
+.player-info {
+  margin-left: 2px !important;
+}
+
+.player-title {
+  font-weight: bold;
+  font-size: 7pt !important;
+  margin: 0;
+  padding: 0;
+}
+
+.player-artist {
+  opacity: 0.7;
+  font-size: 8pt !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Панель управления (кнопки) */
+.controls {
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+.controls button {
+  background: transparent;
+  border: none;
+  color: #cccccc;
+  padding: 3px !important; 
+  margin: 0 2px !important;
+  min-width: 24px;
+  min-height: 24px;
+  border-radius: 50%;
+}
+
+.controls button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
