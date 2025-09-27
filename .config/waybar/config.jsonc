@@ -1,0 +1,75 @@
+{
+    "height": 30,
+    "spacing": 10,
+    "output": "DP-1",
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "hyprland/language",
+        "pulseaudio",
+        "group/hardware",
+        "network",
+        "keyboard-state"
+    ],
+    "hyprland/workspaces": {
+    	"on-click": "activate",
+	"sort-by-number": true,
+	"persistent-workspaces": {
+	  "1": "1",
+	  "2": "2",
+	  "3": "3",
+	  "4": "4",
+	  "5": "5",
+	  "6": "6"
+	}
+    },
+     "hyprland/language": {
+    "format": " {}",
+    "format-en": "EN",
+    "format-ru": "RU"
+  },
+  "group/hardware": {
+    "orientation": "horizontal",
+    "modules": ["cpu", "memory"]
+  },
+    "clock": {
+	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:L%a %d, %b %Y  %H:%M }"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,
+	"on-click": "neohtop"
+    },
+    "memory": {
+        "format": "{}% ",
+	"on-click": "neohtop"
+    },
+    "network": {
+        "format-ethernet": "",
+        "format-disconnected": "⚠",
+	"on-click": "nm-connection-editor"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [" ", " ", " "]
+        },
+        "on-click": "pavucontrol"
+    }
+}
