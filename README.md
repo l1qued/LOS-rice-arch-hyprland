@@ -11,8 +11,12 @@
 8. Super + W = neohtop
 9. Shift + PrtSc = hyprshot (region)
 
-![screenshots](./accest/2025-09-14-121737_hyprshot.png)
+![screenshots](./accest/2025-10-24-181839_hyprshot.png)
 
-![screenshots](./accest/2025-09-14-121748_hyprshot.png)
+![screenshots](./accest/2025-10-24-181845_hyprshot.png)
 
-![screenshots](./accest/2025-09-14-121805_hyprshot.png)
+![screenshots](./accest/2025-10-24-181854_hyprshot.png)
+
+![screenshots](./accest/2025-10-24-181936_hyprshot.png)
+
+![screenshots](./accest/2025-10-24-181940_hyprshot.png)
