@@ -1,0 +1,95 @@
+* {
+  font: "JetBrains Mono Nerd Font 14";
+
+  separatorcolor: #c8c9cc;
+  text-color: #FFFFFF;
+}
+
+configuration {
+  modes: [ combi ];
+  combi-modes: [ window, drun, run ];
+  display-drun: " Search";
+  display-wallpapers: " Wallpapers";
+}
+
+window {
+  location: center;
+  anchor: center;
+  background-color: #18191c;
+  width: 890px;
+  height: 480 px;
+
+  border: 2px solid;
+  border-radius: 10;
+  border-color: #fffbfbee;
+}
+
+mainbox {
+  text-color: white;
+}
+
+prompt {
+  text-color: #ffffff;
+}
+
+textbox-prompt-colon {
+  text-color: white;
+}
+
+element {
+  orientation: horizontal;
+  text-color: white;
+  children: [ element-icon, element-text ];
+  spacing: 5px;
+}
+
+element-icon {
+    size: 2.5em;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+entry {
+  placeholder: "Type here...";
+  hide-cursor-on-empty: true;
+  text-color: white;
+}
+
+element normal.normal {
+  background-color: #1F1F28;
+  text-color: #98999c;
+} 
+
+element selected.normal {
+  background-color: #16161D;
+  text-color: white;
+}
+
+element alternate.normal {
+  background-color: #1F1F28;
+  text-color: #98999c;
+}
+
+element-alternative-nomrmal {
+  background-color: #ffffff;
+}
+
+element-alternative-urgent {
+  background-color: #ffffff;
+}
+
+element-alternative-active {
+  background-color: #ffffff;
+}
+
+scrollbar {
+  handle-color: #424345;
+  background-color: #c8c9cc;
+}
+
+button-selected {
+  text-color: #FFFFFF;
+}
+
