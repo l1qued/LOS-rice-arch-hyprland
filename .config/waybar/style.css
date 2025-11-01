@@ -1,6 +1,8 @@
 * {
-    font-family: "JetBrains Mono NerdFont", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 14px;
+    /* `otf-font-awesome` is required to be installed for icons */
+/*    @import "colors.css"; */
+    font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
 }
 
 window#waybar {
@@ -14,30 +16,27 @@ window#waybar > box {
     padding: 3px 7px;
 }
 
+
 window#waybar.hidden {
     opacity: 0.2;
 }
 
-window#waybar.termite {
-    background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
-}
 
 button {
+    /* Use box-shadow instead of border so the text isn't offset */
     box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
 }
 
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
     border: none;
 }
 
+/* you can set a style on hover for any module like this */
 #pulseaudio:hover {
 }
 
@@ -65,13 +64,6 @@ button:hover {
 #workspaces button.urgent {
     background-color: #eb4d4b;
 }
-
-#hardware {
-  margin: 0 0px;
-  background-color: #16161D;
-  border-radius: 10px;
-}
-
 #mode {
     background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
@@ -82,8 +74,9 @@ button:hover {
 #memory,
 #network,
 #pulseaudio,
-#language,
 #wireplumber,
+#tray,
+#language,
 #workspaces {
     padding: 3px 10px;
     color: #dcd7ba;
@@ -106,11 +99,12 @@ button:hover {
 }
 
 #clock {
-
 }
 
-#language {
-
+#hardware {
+  margin: 0 0px;
+  background-color: #16161D;
+  border-radius: 10px;
 }
 
 label:focus {
@@ -121,30 +115,74 @@ label:focus {
 }
 
 #memory {
-
 }
 
 #network {
-
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
 }
 
 #pulseaudio {
-
 }
 
 #pulseaudio.muted {
-
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+}
+
+#tray {
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: #eb4d4b;
+}
+
+#language {
+}
+
+#keyboard-state {
+    background: #97e1ad;
+    color: #000000;
+    padding: 0 0px;
+    margin: 0 5px;
+    min-width: 16px;
+}
+
+#keyboard-state > label {
+    padding: 0 5px;
+}
+
+#keyboard-state > label.locked {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#privacy {
+    padding: 0;
+}
+
+#privacy-item {
+    padding: 0 5px;
+    color: white;
+}
+
+#privacy-item.screenshare {
+    background-color: #cf5700;
+}
+
+#privacy-item.audio-in {
+    background-color: #1ca000;
+}
+
+#privacy-item.audio-out {
+    background-color: #0069d4;
 }
