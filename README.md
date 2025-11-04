@@ -4,7 +4,7 @@
 1. Super + Q = kitty
 2. Super + B = zen-browser
 3. Super + R = rofi
-4. Super + E = thuar
+4. Super + E = thunar
 5. Super + S = magik worspace
 6. Super + C = kill
 7. Super + L = hyprlock
