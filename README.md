@@ -1,4 +1,4 @@
-# LOS hyprland rice
+# Oreo hyprland rice
 
 # binds
 1. Super + Q = kitty
