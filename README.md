@@ -1,5 +1,13 @@
 # Oreo hyprland rice
 
+# Install oreo rice
+1. sudo pacman -S git
+2. git clone https://github.com/l1qued/Oreo-hyprland.git
+3. cd Oreo-hyprland
+4. chmod +x install.sh
+5. ./install.sh
+
+
 # binds
 1. Super + Q = kitty
 2. Super + B = zen-browser
