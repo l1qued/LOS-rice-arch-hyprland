@@ -241,7 +241,7 @@ echo -e ""
 
 # Установка пакетов pacman
 dot_animation "${messages["installing_packages"]}"
-sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync hyprlock fish rofi pavucontrol vscode-css-languageserver ttf-font-awesone otf-font-awesome ttf-jetbrains-mono nerd-fonts ttf-dejavu blueberry inetutils scrcpy&
+sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync swww hyprlock fish rofi pavucontrol vscode-css-languageserver ttf-font-awesone otf-font-awesome ttf-jetbrains-mono nerd-fonts ttf-dejavu blueberry inetutils scrcpy&
 spinner $! "${messages["updating"]}"
 
 # Копирование конфигов
@@ -256,7 +256,7 @@ spinner $! "${messages["cloning_yay"]}"
 cd /tmp/yay
 makepkg -si --noconfirm &
 spinner $! "${messages["building_yay"]}"
-cd 
+cd ..
 # Установка пакетов YAY
 dot_animation "${messages["aur_packages"]}"
 
@@ -265,17 +265,16 @@ yay -S --noconfirm neohtop zen-browser-bin emmet-language-server&
 # Скачивание и установка тем
 dot_animation "${messages["themes"]}"
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git &
-chmod +x Graphite-gtk-theme/install.sh
-chmod +x Graphite-gtk-theme/other/grub2/install.sh
-/Graphite-gtk-theme/install.sh
-/Graphite-gtk-theme/other/grub2/install.sh
+chmod +x ./Graphite-gtk-theme/install.sh
+chmod +x ./Graphite-gtk-theme/other/grub2/install.sh
+./Graphite-gtk-theme/install.sh
+./Graphite-gtk-theme/other/grub2/install.sh
 spinner $! "Cloning graphite-theme"
 
 # Выдача прав на выполнение скриптов
 dot_animation "${messages["permissions"]}"
 
-chmod +x ~/.config/hypr/scripts/*.sh &
-chmod +x ~/.config/waybar/scripts/*.sh &
+chmod +x ~/.config/swww/swww.sh &
 
 # Смена shella
 dot_animation "${messages["changing_shell"]}"
