@@ -241,7 +241,7 @@ echo -e ""
 
 # Установка пакетов pacman
 dot_animation "${messages["installing_packages"]}"
-sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync hyprlock fish rofi pavucontrol ttf-font-awesone otf-font-awesome ttf-jetbrains-mono nerd-fonts ttf-dejavu blueberry inetutils scrcpy&
+sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync hyprlock fish rofi pavucontrol vscode-css-languageserver ttf-font-awesone otf-font-awesome ttf-jetbrains-mono nerd-fonts ttf-dejavu blueberry inetutils scrcpy&
 spinner $! "${messages["updating"]}"
 
 # Копирование конфигов
@@ -260,7 +260,7 @@ cd
 # Установка пакетов YAY
 dot_animation "${messages["aur_packages"]}"
 
-yay -S --noconfirm neohtop zen-browser-bin &
+yay -S --noconfirm neohtop zen-browser-bin emmet-language-server&
 
 # Скачивание и установка тем
 dot_animation "${messages["themes"]}"
