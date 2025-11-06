@@ -241,16 +241,16 @@ echo -e ""
 
 # Установка пакетов pacman
 dot_animation "${messages["installing_packages"]}"
-sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync swww hyprlock fish rofi pavucontrol vscode-css-languageserver ttf-font-awesone otf-font-awesome ttf-jetbrains-mono nerd-fonts ttf-dejavu blueberry inetutils scrcpy&
+sudo pacman -Syu --noconfirm hyprshot hyprpicker waybar swaync nwg-look swww hyprlock fish neovim papirus-icon-theme rofi pavucontrol vscode-css-languageserver ttf-font-awesome otf-font-awesome ttf-jetbrains-mono nerd-fonts nftables ttf-dejavu blueberry inetutils scrcpy thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman file-roller p7zip unrar tar tumbler ntfs-3g exfatprogs fuse2 fuse3 dosfstools gvfs gvfs-afc gvfs-gphoto2 gvfs-mtp gvfs-nfs gvfs-smb udisks2 gvfs-smb
 spinner $! "${messages["updating"]}"
 
 # Копирование конфигов
-cp ./config/* ~./config/
-cp Wallpapers ~/
+cp -r .config/* ~/.config/
+cp -r Wallpapers ~/
 
 # Установка YAY
 dot_animation "${messages["installing_yay"]}"
-git clone https://aur.archlinux.org/yay.git /tmp/yay &
+git clone https://aur.archlinux.org/yay.git /tmp/yay 
 spinner $! "${messages["cloning_yay"]}"
 
 cd /tmp/yay
@@ -260,11 +260,11 @@ cd ..
 # Установка пакетов YAY
 dot_animation "${messages["aur_packages"]}"
 
-yay -S --noconfirm neohtop zen-browser-bin emmet-language-server&
+yay -S --noconfirm neohtop zen-browser-bin emmet-language-server 
 
 # Скачивание и установка тем
 dot_animation "${messages["themes"]}"
-git clone https://github.com/vinceliuice/Graphite-gtk-theme.git &
+git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 chmod +x ./Graphite-gtk-theme/install.sh
 chmod +x ./Graphite-gtk-theme/other/grub2/install.sh
 ./Graphite-gtk-theme/install.sh
@@ -286,7 +286,7 @@ spinner $! "${messages["shell_set"]}"
 # =============================================
 # FINAL SECTION
 # =============================================
-
+sleep 1000
 echo -e ""
 print_success
 echo -e "${GREEN}${messages["completed"]}${NC}"
@@ -308,7 +308,7 @@ for i in {10..1}; do
 done
 
 echo -e "\n${GREEN}${messages["rebooting"]}${NC}"
-sleep 2
+sleep 2000
 
 # Reboot system
 reboot
