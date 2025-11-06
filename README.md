@@ -1,6 +1,6 @@
 # Oreo hyprland rice
 
-# Install oreo rice (no work)
+# Install oreo rice
 1. sudo pacman -S git
 2. git clone https://github.com/l1qued/Oreo-hyprland.git
 3. cd Oreo-hyprland
