@@ -31,7 +31,7 @@
 	}
     },
     "hyprland/language": {
-      "format": " {}",
+      "format": "  {}",
       "format-en": "EN",
       "format-ru": "RU"
     },
@@ -49,7 +49,7 @@
     },
     "clock": {
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:L%a %d, %b %Y  %H:%M }"
+        "format": "{:L%a %d, %b %Y   %H:%M }"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -79,10 +79,10 @@
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "default": ["", "", ""]
+            "headphone": " ",
+            "hands-free": " ",
+            "headset": " ",
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
